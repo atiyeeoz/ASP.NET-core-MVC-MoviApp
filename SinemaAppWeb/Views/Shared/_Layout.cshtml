@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Sinema</title>
+</head>
+<body>
+    <header>
+        @Html.Partial("_navbar")
+    </header>
+    <main>
+        <div class="container mt-4">
+            @RenderBody()
+        </div>
+    </main>
+    <footer>
+        @Html.Partial("_footer")
+    </footer>
+        
+    
+</body>
+</html>
